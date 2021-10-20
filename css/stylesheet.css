@@ -1,9 +1,18 @@
-li { 
-    list-style: none;
-    float: left;
+* {
+  box-sizing: border-box;
 }
 
+
+
+li { 
+    list-style: none;
+}
+html { 
+    scroll-behavior: smooth;
+
+}
 .logo {
+    font-style: century;
     width: 40px;
     margin-top: 5px;
     float: left;
@@ -13,6 +22,7 @@ li {
     background-color: forestgreen;
     color: black;
     height: 70px;
+    width: 100%;
 }
 
 .header-text { 
@@ -24,26 +34,120 @@ li {
  
 }
 
-.header-list {
-
-}
-
 .header-list li { 
     float: left;
     font-size: 15px;
-    padding: 32px 30px 32px 30px;
+    padding: 32px;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
 }
 
+.header-list li a {
+    line-height: 10px;
+    padding-left:15px;
+    padding-right: 15px;
+    color: white;
+    display: block;
+}
+
+.header-list li:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+  
+
+.header-right a {
+    line-height: 72px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    display: block;
+}
+
+.menu-icons {
+    color: white;
+    float: right;
+    font-size: 32px;
+    padding: 21px 0;
+    display: none;
+  }
+
 .main { 
-    height: 600px;
+    background-image: url(/resource/wallpaperbetter.com_1600x900.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 100px 100px 100px;
+    margin-bottom: 10px;
+    height: 280vh;
 }
 
 .main-content { 
     text-align: center;
-    margin-top: 100px;
+}
+
+.main-content h1 {
+    color: rgba(8, 11, 9, 1);
+    padding-top: 70px;
+}
+
+.main-content span { 
+    color: green;
+}
+
+.contents {
+    height: auto;
+}
+
+.contents-title {
+    border-bottom:2px solid black;
+    font-size:30px;
+    text-align: center;
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
+
+.contents-item {
+    float: left;
+    margin-right:40px;
+    margin-bottom: 100px;
+}
+
+.contents-item p {
+    font-size:18px;
+    text-align: center;
+    padding-bottom: 60px;
+
 }
 
 .footer {
-    background-color: grey;
-    height: 100px;
+    background-color: forestgreen;
+    color: black;
+    height: 200px;
+    padding: 40px;
+
+}
+
+.footer-logo {
+    font-size: 32px;
+    float: left;
+}
+
+.footer-list {
+    float: right;
+  }
+  
+.footer-list li {
+    padding-bottom: 20px;
+    
+   
 }
