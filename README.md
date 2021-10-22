@@ -1,5 +1,5 @@
 # Project-Web-Group
-Project Web Group A57
+Mini Project Web Group A57
 
 Contributor:
 - Desky Sapta Pratama
